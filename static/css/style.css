@@ -1,0 +1,524 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: inherit
+}
+
+
+body {
+    font-family: 'Didot', sans-serif;
+    font-weight: 100;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* START OF NAVIGATION ------------------------------- */
+  
+
+
+/* .spanish-btn{
+    margin-left: auto;        
+  } */
+.spanish-btn button {
+    /* margin-top: 8px;
+    margin-right: 15px; */
+    position: absolute;
+    top: 15px;     /* distance from the top */
+    right: 15px;   /* distance from the right */
+    padding: 6px 16px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.spanish-btn button:hover {
+    background: #e65100;
+}
+
+  /* .nav ul li:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+    transition: background .5s;
+  } */
+
+/* END OF NAVIGATION ----------------------------- */
+
+.header{
+    background-image: url('../images/Tent.jpeg');
+    background-size:cover;
+    text-align: center;
+    height: 800px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw); 
+    position: relative; 
+
+  }
+  .Logo{
+  height: 400px;
+  width: 800px;
+  position: center;
+  }
+  .header .Logo{
+  /* border: 4px solid; */
+  /* padding-right: 55px; */
+  display: block;              /* Makes the image a block element */
+  margin: 0 auto;              /* Centers the image horizontally */
+  /* width: 850px;                Adjust width as needed */
+  max-width: 90vw;             /* Responsive: never wider than viewport */
+  height: auto;                /* Maintain aspect ratio */
+  margin-top: 40px;            /* Space from the top */
+  margin-bottom: 20px;         /* Space below the logo */
+  
+    /* position: relative;
+    text-align: center;
+    top: 100px;
+    padding-left: 40px;
+    border-color: black; */
+  }
+  .mission{
+  /* border: 4px solid; */
+  font-size: 25px;
+  color: aliceblue;
+  /* text-align:center; */
+  padding-top: 150px; 
+  margin: auto;
+  }
+
+.bottom-section{
+  background: linear-gradient(180deg,#ffffff 18%, #0d6efd 50%, #fd7e14 100%);
+  transition: background 0.5s;
+}
+
+/* START OF CONTACT INFO */
+
+.contact-info{
+  
+  padding: 20px;
+  display: flex;
+  gap:10px;
+  max-width: 800px;
+  margin: auto;
+  /* border: 4px dotted black; */
+
+}
+.btn-maincustom{
+  margin-top: 175px;
+  margin-left: 15px;
+  /* margin: 0 auto; */
+  background: linear-gradient(90deg,#2774fa 15%, #0d79fd 15%, #fd7e14 100%);
+  /* background-color: #fd7e14; */
+  color: #fff;
+  border: 4px solid ;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  border-radius: 0.55rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: center;
+  transition: background-color 0.15s, color 0.15s;
+
+}
+
+.btn1-custom{
+  background: linear-gradient(90deg,#27b1ff 18%, #27b1ff 50%, #4c76d8 100%);
+  /* background-color: #fd7e14; */
+  color: #fff;
+  border: 4px solid black ;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  border-radius: 0.55rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: center;
+  transition: background-color 0.15s, color 0.15s;
+}
+.btn2-custom{
+  background: linear-gradient(90deg,#2774fa 15%, #0d79fd 15%, #fd7e14 100%);
+  /* background-color: #fd7e14; */
+  color: #fff;
+  border: 4px solid black ;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  border-radius: 0.55rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: center;
+  transition: background-color 0.15s, color 0.15s;
+}
+.btn3-custom{
+  background: linear-gradient(90deg,#faa627 18%, #f99124 50%, #f99124 100%);
+  /* background-color: #fd7e14; */
+  color: #fff;
+  border: 4px solid black ;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  border-radius: 0.55rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: center;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.btn-maincustom:hover{
+  background-color: #e65100;
+  color: #fff;
+}
+
+.btn1-custom:hover{
+  background-color: #0082e6;
+  color: #fff;
+}
+
+.btn2-custom:hover{
+  background-color: #e65100;
+  color: #fff;
+}
+
+.btn2-custom:hover{
+  background-color: #e65100;
+  /* color: #fff; */
+}
+
+.btn3-custom:hover{
+  background-color: #e65100;
+  color: #fff;
+}
+
+/* END OF CONTACT INFO */
+
+
+
+/*  START OF FAMILY SECTION  */
+.Family {
+    font-family: "didot", sans-serif;
+    font-size: 15px;
+    padding: 50px;
+    margin: 70px;
+    /* border: 4px solid black ; */
+    
+  }
+
+.family-content {
+    display: flex;                /* Side-by-side layout */
+    align-items: center;          /* Vertically center items */
+    justify-content: space-between; /* Space out text and image */
+    gap: 40px;  
+                      /* Space between text and image */
+}
+.family-text {
+  flex: 2;                      /* Take up more space */
+}
+
+.family-image {
+  flex: 1;                      /* Take up less space */
+  display: flex;
+  justify-content: flex-end;    /* Align image to the right */
+}
+
+.family-image img {
+  width: 300px;                 /* Set a good width */
+  height: auto;                 /* Keep aspect ratio */
+  border-radius: 16px;          /* Rounded corners */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+/* END OF FAMILY SECTION ------------- */
+
+
+
+/* START OF INVENTORY SECTION --------------------*/ 
+
+.inventory{
+    /* background-color:#ff9800; */
+    margin: 30px;
+    padding-top: 100px;
+    /* border: 4px solid; */
+}
+h2{
+  /* padding-left: 50px;
+  padding-top: 30px; */
+  color: linear
+}
+h3 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+h3 a:hover{
+  color: #007bff;
+}
+.tents-text{
+  margin-top: 100px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;  /* Ensures it fills grid column */
+  /* margin: 0 auto; */
+  /* background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); */
+}
+
+.inventory-10tents{
+    padding: 40px 0;
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.tent10-cards{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, 250px); /* ✅ Makes it responsive */
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    /* border: solid 1px #0b0a0a; */
+}
+.inventory-20tents{
+    padding: 40px 0;
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.tent20-cards{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, 250px); /* ✅ Makes it responsive */
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 1px #0b0a0a; */
+}
+
+
+.inventory-jumphouses{
+  padding: 40px 0;
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+  /* display: grid;
+  place-items: center;
+  height: 800px; */
+  /* border: 1px solid */
+}
+
+.jumphouse-cards{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, 250px); /* ✅ Makes it responsive */
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 1px #0b0a0a; */
+}
+.inventory-chairstables{
+  /* padding: 40px 20px; */
+    padding: 40px 0;
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+  /* display: grid;
+  place-items: center;
+  height: 800px; */
+  /* border: 1px solid */
+}
+.chairstables-cards{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, 250px); /* ✅ Makes it responsive */
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 1px #0b0a0a; */
+}
+.inventory-portabletandh{
+  padding: 40px 0;
+    display: block;
+    width: 100%;
+    /* border: 2px solid; */
+  /* display: grid;
+  place-items: center;
+  height: 800px; */
+}
+.portabletoiletheater-cards{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, 250px); /* ✅ Makes it responsive */
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 1px #0b0a0a; */
+  /* border: 1px solid */
+ 
+}
+
+/* END OF INVENTORY SECTION ------------- */
+
+  
+  h1,h2,h3,h4{
+    font-family:"Didot", sans-serif;
+    font-size: 50px;
+    
+  }
+
+
+  /* START OF FOOOTER SECTION  */
+  /* .footer{
+    border: 4px solid;
+    height: 300px;
+  } */
+  .footer-content{
+    background-color: #fff;
+    font-family: "Didot" ,sans-serif;
+    display: grid;
+    font-weight: bold;
+    place-items: center;
+    height: 200px;
+    
+  }
+  /* END OF FOOTER SECTION */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 900px) {
+
+
+    .header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+      background-image: url(../images/Tent.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      height: 100vh;
+      width: 100%;
+      /* border: 4px solid blue; */
+      /* margin: 0 auto ; */
+    }
+
+      .header .Logo{
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        /* justify-content: center; */
+        /* display: block; */
+        /* margin-left: 40px; */
+        /* border: 4px, solid black; */
+      }
+      .header .underlogo{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        /* border: 4px solid red; */
+      }
+      .spanish-btn{
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        /* border: 4px solid yellow; */
+      }
+      .btn-maincustom{
+        /* margin-top: 20px; */
+        /* width: 100%; */
+        /* max-width: 350px; */
+        /* margin: 0 auto; */
+        
+        /* border: 4px solid orange; */
+      }
+
+
+    .contact-info{
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn1-custom, .btn2-custom, .btn3-custom{
+      justify-content: center;
+      margin: 10px;
+      width: 100%;
+      /* text-align: center; */
+      max-width: 350px;
+    }
+
+    .family-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .family-image {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .family-image img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+
+
+
+    
+
+
+}
