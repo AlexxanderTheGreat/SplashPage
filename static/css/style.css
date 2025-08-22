@@ -62,7 +62,7 @@ body {
     height: 100vh;
     min-height: 100svh;
     width: 100vw;
-    margin-left: calc(50% - 50vw); 
+    /* margin-left: calc(50% - 50vw);  */
     position: relative; 
 
   }
