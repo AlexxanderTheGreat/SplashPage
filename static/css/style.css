@@ -496,6 +496,8 @@ h3 a:hover{
     }
 
     .family-content {
+        width: 100%;
+        max-width: 350px;
         flex-direction: column;
         align-items: flex-start;
         border: olive 2px solid;
