@@ -249,7 +249,7 @@ body {
     /* background-color:#ff9800; */
     margin: 30px;
     padding-top: 100px;
-    border: 4px solid;
+    /* border: 4px solid; */
 }
 h2{
   /* padding-left: 50px;
@@ -499,23 +499,23 @@ h3 a:hover{
         margin: 0 auto;
         margin: 40px 0;
         padding: 20px;
-        border: 4px solid red;
+        /* border: 4px solid red; */
       }
     .family-content {
         width: 100%;
         max-width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        border: olive 2px solid;
+        /* border: olive 2px solid; */
     }
     .family-image {
         justify-content: center;
         width: 100%;
         margin-top: 20px;
-        border: olive 2px solid;
+        /* border: olive 2px solid; */
     }
     .family-image img {
-        border: orangered 2px solid;
+        /* border: orangered 2px solid; */
         width: 80%;
         max-width: 350px;
         margin: 0 auto;
