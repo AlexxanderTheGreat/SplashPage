@@ -523,6 +523,8 @@ h3 a:hover{
     }
 
     h4{
+      margin: 0 auto;
+      width: 100%;
       border: olivedrab 2px solid;
     }
     
