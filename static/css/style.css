@@ -524,7 +524,7 @@ h3 a:hover{
 
     h4{
       margin: 0 auto;
-      max-width: 100%;
+      /*max-width: 100%;*/
       width: 100%;
       border: olivedrab 2px solid;
     }
