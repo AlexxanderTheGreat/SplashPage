@@ -1,8 +1,18 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,redirect
 # from flask_bootstrap import Bootstrap5
 
 
 app = Flask(__name__)
+@app.before_request
+def redirect_to_canonical_domain():
+    # If someone hit the Render hostname, send them to your custom domain
+    if request.host == "morales-event-rentals.onrender.com":
+        # Keep path & query string
+        path = request.full_path
+        # Flask’s full_path ends with “?” if there’s no query—trim it
+        if path.endswith("?"):
+            path = path[:-1]
+        return redirect("https://www.moraleseventrentals.com" + path, code=308)
 # bootstrap = Bootstrap5(app)
 
 @app.route("/")
