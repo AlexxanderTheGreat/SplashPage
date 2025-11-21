@@ -22,7 +22,7 @@ def t1():
   texts = {
         "en": {
             "spsh" : "En Espanol",
-            "call_now": "Call us Now!",
+            "call_now": "Call to Book!",
             "email": "info@moraleseventrentals.com" ,
             "phone": "Addidtional phone number",
             "insta": "Check us out on Instagram!",
