@@ -27,11 +27,11 @@ def t1():
             "phone": "Addidtional phone number",
             "insta": "Check us out on Instagram!",
             "abt": "About Us",
-            "prph": """We’re a family-owned business based in Seaside, California, proudly rooted in our Hispanic heritage.
+            "prph": """We’re a family-owned business based in Monterey, California, proudly rooted in our Hispanic heritage.
                                 Our mission is to provide great service, fair prices, and that personal, one-on-one connection 
                                 you can only get from a family-run operation. We believe in creating joyful experiences and 
                                 lasting memories for our community. When you book with us, you’re not just supporting a 
-                                business—you’re supporting a family that cares.""",
+                                business, you’re supporting a family that cares.""",
             "invt": "Inventory",
             "tnt": "Tents",
             "tentt": "We also offer the ability to make a tent to the size you would like(if possible) and the addition of lights with no extra cost but we also offer nicer string ligths for $20 more",
@@ -44,9 +44,9 @@ def t1():
         },
         "es": {
             "spsh": "English",
-            "call_now": "¡Llámanos ahora!",
+            "call_now": "¡Llámanos para empezar la fiesta!",
             "email": "info@moraleseventrentals.com" ,
-            "phone": "Otro Numero para llamar",
+            "phone": "Otro Numero para llamarnos",
             "insta": "siganos en el instagram!",
             "abt": "Un Poco de Nosotros",
             "prph": """Somos una empresa familiar con sede en Seaside, California, 
