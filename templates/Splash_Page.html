@@ -141,7 +141,7 @@
 
       <!-- Chairs & Tables -->
       <div class="service-card" onclick="switchToTab('ct')">
-        <img class="service-card-img" src="{{ url_for('static', filename='images/inventory-chairstables/IMG_8493.jpeg') }}" alt="Chairs and Tables">
+        <img class="service-card-img" src="{{ url_for('static', filename='images/inventory-chairstables/whiteChair.png') }}" alt="Chairs and Tables">
         <div class="service-card-body">
           <div class="service-card-title" data-en="Chairs & Tables" data-es="Sillas y Mesas">Chairs & Tables</div>
           <p class="service-card-desc" data-en="White and charcoal folding chairs. 6ft rectangular and round tables. Over 300 chairs in stock."
@@ -314,7 +314,7 @@
       <div class="inv-panel" id="panel-ct">
         <div class="inv-grid">
           <div class="inv-card">
-            <img src="{{ url_for('static', filename='images/inventory-chairstables/WhiteChairs.jpeg') }}" alt="White Chairs">
+            <img src="{{ url_for('static', filename='images/inventory-chairstables/whiteChair.png') }}" alt="White Chairs">
             <div class="inv-card-body">
               <div class="inv-card-title" data-en="White Folding Chairs" data-es="Sillas Plegables Blancas">White Folding Chairs</div>
               <p class="inv-card-desc" data-en="Classic white plastic folding chairs. Clean, bright, and perfect for any event." data-es="Sillas plegables blancas clásicas de plástico. Limpias y perfectas para cualquier evento.">Classic white plastic folding chairs. Clean, bright, and perfect for any event.</p>
@@ -322,15 +322,24 @@
             <div class="inv-card-footer"><span class="inv-card-price" data-en="$1/Chair" data-es="$1/Silla">$1/Chair</span><span class="inv-card-stock" data-en="310 in stock" data-es="310 disponibles">310 in stock</span></div>
           </div>
           <div class="inv-card">
-            <img src="{{ url_for('static', filename='images/inventory-chairstables/CharcoalChairs.jpeg') }}" alt="Charcoal Chairs">
+            <span class="inv-card-badge" data-en="New!" data-es="¡Nuevo!">New!</span>
+            <img src="{{ url_for('static', filename='images/inventory-chairstables/gardenChair.png') }}" alt="Garden White Chairs">
+            <div class="inv-card-body">
+              <div class="inv-card-title" data-en="Garden White Folding Chairs" data-es="Sillas Plegables Blancas">Garden White Folding Chairs</div>
+              <p class="inv-card-desc" data-en="Garden white plastic folding chairs. Elegant, New, and perfect for any event." data-es="Sillas plegables blancas clásicas de plástico. Limpias y perfectas para cualquier evento.">Garden white plastic folding chairs. Elegant, New, and perfect for any event.</p>
+            </div>
+            <div class="inv-card-footer"><span class="inv-card-price" data-en="Call For Pricing" data-es="Llama Por Precio">Call For Pricing</span><span class="inv-card-stock" data-en="50 in stock" data-es="50 disponibles">50 in stock</span></div>
+          </div>
+          <div class="inv-card">
+            <img src="{{ url_for('static', filename='images/inventory-chairstables/greyChair.png') }}" alt="Charcoal Chairs">
             <div class="inv-card-body">
               <div class="inv-card-title" data-en="Charcoal Folding Chairs" data-es="Sillas Plegables Carbón">Charcoal Folding Chairs</div>
               <p class="inv-card-desc" data-en="Charcoal-colored folding chairs. Sleek look that pairs well with any color scheme." data-es="Sillas plegables color carbón. Diseño elegante que combina con cualquier paleta de colores.">Charcoal-colored folding chairs. Sleek look that pairs well with any color scheme.</p>
             </div>
-            <div class="inv-card-footer"><span class="inv-card-price">$1/Chair</span><span class="inv-card-stock" data-en="200 in stock" data-es="200 disponibles">200 in stock</span></div>
+            <div class="inv-card-footer"><span class="inv-card-price" data-en="$1/Chair" data-es="$1/Silla">$1/Chair</span><span class="inv-card-stock" data-en="200 in stock" data-es="200 disponibles">200 in stock</span></div>
           </div>
           <div class="inv-card">
-            <img src="{{ url_for('static', filename='images/inventory-chairstables/Tables.jpeg') }}" alt="6ft Tables">
+            <img src="{{ url_for('static', filename='images/inventory-chairstables/6ftTable.png') }}" alt="6ft Tables">
             <div class="inv-card-body">
               <div class="inv-card-title" data-en="6ft Rectangular Tables" data-es="Mesas Rectangulares de 6ft">6ft Rectangular Tables</div>
               <p class="inv-card-desc" data-en="Seats 6–8 guests per table. Our most popular choice for banquet-style seating." data-es="Para 6–8 invitados por mesa. Nuestra opción más popular para banquetes.">Seats 6–8 guests per table. Our most popular choice for banquet-style seating.</p>
@@ -338,7 +347,7 @@
             <div class="inv-card-footer"><span class="inv-card-price" data-en="$6/Table" data-es="$6/Mesa">$6/Table</span><span class="inv-card-stock" data-en="80 in stock" data-es="80 disponibles">80 in stock</span></div>
           </div>
           <div class="inv-card">
-            <img src="{{ url_for('static', filename='images/inventory-chairstables/IMG_8493.jpeg') }}" alt="Round Tables">
+            <img src="{{ url_for('static', filename='images/inventory-chairstables/6ftTable.png') }}" alt="Round Tables">
             <div class="inv-card-body">
               <div class="inv-card-title" data-en="Round Tables" data-es="Mesas Redondas">Round Tables</div>
               <p class="inv-card-desc" data-en="Round tables fitting 8–10 guests. Ideal for dinner receptions and formal setups." data-es="Mesas redondas para 8–10 invitados. Ideales para cenas y eventos formales.">Round tables fitting 8–10 guests. Ideal for dinner receptions and formal setups.</p>
