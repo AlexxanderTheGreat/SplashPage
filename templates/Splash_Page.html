@@ -6,7 +6,7 @@
   <title>Morales Event & Party Rentals</title>
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Logo/LogoTransparentBlacklettering.png') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=3">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=4">
 
 </head>
 <body>
@@ -111,6 +111,37 @@
        data-es="Desde carpas y mesas hasta brincolines y más — cubrimos su evento de principio a fin.">
       From tents and tables to jump houses and more — we've got your event covered, start to finish.
     </p>
+
+    <!-- NEW ARRIVALS SPOTLIGHT -->
+    <div class="new-arrivals">
+      <p class="new-arrivals-label" data-en="✨ Just Arrived" data-es="✨ Recién Llegados">✨ Just Arrived</p>
+      <div class="new-arrivals-grid">
+        <div class="arrival-card" onclick="switchToTab('tents')">
+          <span class="badge-new" data-en="New" data-es="Nuevo">New</span>
+          <img class="arrival-card-img" src="{{ url_for('static', filename='images/Inventory-tents/weddingTent.jpeg') }}" alt="20x40 Wedding Tent">
+          <div class="arrival-card-body">
+            <div class="arrival-card-title" data-en="20×40 Wedding Tent" data-es="Carpa de Boda 20×40">20×40 Wedding Tent</div>
+            <p class="arrival-card-desc" data-en="Our newest tent, with elegant arched windows. Seats 80–120+ guests — perfect for weddings and receptions." data-es="Nuestra carpa más nueva, con elegantes ventanas en arco. Para 80–120+ invitados — perfecta para bodas y recepciones.">Our newest tent, with elegant arched windows. Seats 80–120+ guests — perfect for weddings and receptions.</p>
+            <div class="arrival-card-footer">
+              <span class="service-card-price" data-en="$400/Day" data-es="$400/Día">$400/Day</span>
+              <span class="arrival-card-link" data-en="View tents →" data-es="Ver carpas →">View tents →</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrival-card" onclick="switchToTab('ct')">
+          <span class="badge-new" data-en="New" data-es="Nuevo">New</span>
+          <img class="arrival-card-img" src="{{ url_for('static', filename='images/inventory-chairstables/gardenChair.png') }}" alt="Garden White Folding Chairs">
+          <div class="arrival-card-body">
+            <div class="arrival-card-title" data-en="Garden White Chairs" data-es="Sillas Blancas de Jardín">Garden White Chairs</div>
+            <p class="arrival-card-desc" data-en="Elegant white garden folding chairs that dress up any ceremony or reception. 100 in stock." data-es="Elegantes sillas plegables blancas de jardín que realzan cualquier ceremonia o recepción. 100 disponibles.">Elegant white garden folding chairs that dress up any ceremony or reception. 100 in stock.</p>
+            <div class="arrival-card-footer">
+              <span class="service-card-price" data-en="$3–$4/Chair" data-es="$3–$4/Silla">$3–$4/Chair</span>
+              <span class="arrival-card-link" data-en="View chairs →" data-es="Ver sillas →">View chairs →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="services-grid">
 
       <!-- Tents -->
@@ -245,7 +276,7 @@
           </div>
         </div>
 
-        <div class="inv-grid tents-row">
+        <div class="inv-grid tents-row tents-row--4">
           <div class="inv-card">
             <img src="{{ url_for('static', filename='images/Inventory-tents/20x20-I.jpeg') }}" alt="20x20 Tent">
             <div class="inv-card-body">
@@ -269,6 +300,15 @@
               <p class="inv-card-desc" data-en="20ft wide × 40ft length. Our largest tent — ideal for 80–120+ guests." data-es="20ft de ancho × 40ft de largo. Nuestra carpa más grande — ideal para 80–120+ invitados.">20ft wide × 40ft length. Our largest tent — ideal for 80–120+ guests.</p>
             </div>
             <div class="inv-card-footer"><span class="inv-card-price" data-en="$240/Day" data-es="$240/Día">$240/Day</span></div>
+          </div>
+          <div class="inv-card">
+            <span class="inv-card-badge" data-en="New!" data-es="¡Nuevo!">New!</span>
+            <img src="{{ url_for('static', filename='images/Inventory-tents/weddingTent1.jpeg') }}" alt="20x40 Wedding Tent" style="object-position: center 68%">
+            <div class="inv-card-body">
+              <div class="inv-card-title" data-en="20×40 Wedding Tent" data-es="Carpa de Boda 20×40">20×40 Wedding Tent</div>
+              <p class="inv-card-desc" data-en="20ft wide × 40ft length. Our newest tent, with elegant arched windows — ideal for 80–120+ guests." data-es="20ft de ancho × 40ft de largo. Nuestra carpa más nueva, con elegantes ventanas en arco — ideal para 80–120+ invitados.">20ft wide × 40ft length. Our newest tent, with elegant arched windows — ideal for 80–120+ guests.</p>
+            </div>
+            <div class="inv-card-footer"><span class="inv-card-price" data-en="$400/Day" data-es="$400/Día">$400/Day</span></div>
           </div>
         </div>
 
@@ -325,8 +365,8 @@
             <span class="inv-card-badge" data-en="New!" data-es="¡Nuevo!">New!</span>
             <img src="{{ url_for('static', filename='images/inventory-chairstables/gardenChair.png') }}" alt="Garden White Chairs">
             <div class="inv-card-body">
-              <div class="inv-card-title" data-en="Garden White Folding Chairs" data-es="Sillas Plegables Blancas">Garden White Folding Chairs</div>
-              <p class="inv-card-desc" data-en="Garden white plastic folding chairs. Elegant, New, and perfect for any event." data-es="Sillas plegables blancas clásicas de plástico. Limpias y perfectas para cualquier evento.">Garden white plastic folding chairs. Elegant, New, and perfect for any event.</p>
+              <div class="inv-card-title" data-en="Garden White Folding Chairs" data-es="Sillas Plegables Blancas de Jardín">Garden White Folding Chairs</div>
+              <p class="inv-card-desc" data-en="Garden white plastic folding chairs. Elegant, new, and perfect for any event." data-es="Sillas plegables blancas de jardín de plástico. Elegantes, nuevas y perfectas para cualquier evento.">Garden white plastic folding chairs. Elegant, new, and perfect for any event.</p>
             </div>
             <div class="inv-card-footer"><span class="inv-card-price" data-en="$3-$4" data-es="$3-$4">$3-$4</span><span class="inv-card-stock" data-en="100 in stock" data-es="100 disponibles">100 in stock</span></div>
           </div>
