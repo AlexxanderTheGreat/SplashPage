@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Logo/LogoTransparentBlacklettering.png') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=4">
+  {% include '_meta_pixel.html' %}
 
 </head>
 <body>
@@ -569,8 +570,9 @@ Special requests: String lights please. Setup by 10am Saturday."></textarea>
     </div>
   </div>
   <div class="footer-bottom">
-    <p data-en="© 2025 Morales Event & Party Rentals. All rights reserved." data-es="© 2025 Morales Event & Party Rentals. Todos los derechos reservados.">© 2025 Morales Event & Party Rentals. All rights reserved.</p>
+    <p data-en="© {{ year }} Morales Event & Party Rentals. All rights reserved." data-es="© {{ year }} Morales Event & Party Rentals. Todos los derechos reservados.">© {{ year }} Morales Event & Party Rentals. All rights reserved.</p>
     <p data-en="Built with ❤️ in Monterey County" data-es="Hecho con ❤️ en el Condado de Monterey">Built with ❤️ in Monterey County</p>
+    <p><a href="/privacy" style="color:inherit;" data-en="Privacy Policy" data-es="Aviso de Privacidad">Privacy Policy</a></p>
   </div>
 </footer>
 
@@ -671,6 +673,8 @@ Special requests: String lights please. Setup by 10am Saturday."></textarea>
     const emailField = form.querySelector('input[name="email"]');
     const replyField = form.querySelector('input[name="_replyto"]');
     if (emailField && replyField) replyField.value = emailField.value;
+    // Tell Meta a quote request (Lead) happened, so ads can optimize for real leads
+    if (window.fbq) fbq('track', 'Lead', { content_name: 'Website quote form' });
     // Optimistic confirmation; Formspree will redirect/handle in background
     setTimeout(() => {
       btn.textContent = currentLang === 'es' ? '✓ ¡Solicitud Enviada! Lo llamaremos pronto.' : '✓ Request Sent! We\'ll call you soon.';

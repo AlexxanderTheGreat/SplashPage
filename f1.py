@@ -1,4 +1,11 @@
+import os
+from datetime import date
+
 from flask import Flask, render_template, request, redirect
+
+# Meta Pixel ID from Events Manager. Set META_PIXEL_ID in Render → Environment,
+# or paste it as the default below. Leave empty to turn the Pixel off.
+META_PIXEL_ID = os.environ.get("META_PIXEL_ID", "")
 
 app = Flask(__name__)
 
@@ -10,6 +17,18 @@ def redirect_to_canonical_domain():
         if path.endswith("?"):
             path = path[:-1]
         return redirect("https://www.moraleseventrentals.com" + path, code=308)
+
+
+@app.context_processor
+def inject_globals():
+    return {"meta_pixel_id": META_PIXEL_ID, "year": date.today().year}
+
+
+@app.route("/privacy")
+@app.route("/privacy-policy")
+def privacy():
+    """Privacy policy (required by Meta for lead forms and the Pixel)."""
+    return render_template("privacy.html")
 
 
 @app.route("/")
